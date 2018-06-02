@@ -1,0 +1,24 @@
+{
+  "name": "bower",
+  "authors": [
+    "Giovana Andrade <giovana.lca@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/lib/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.6.4",
+    "angular-route": "1.6.4",
+    "firebase": "3.7.8",
+    "angularfire": "2.3.0"
+  }
+}

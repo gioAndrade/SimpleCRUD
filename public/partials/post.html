@@ -1,0 +1,17 @@
+<div class="">
+    <form name="formPost" method="post">
+        <input type="text" ng-model="post.title" ng-required>
+        <br>
+        <br>
+        <textarea ng-model="post.text" rows="8" cols="80" ng-required></textarea>
+        <br>
+        <br>
+        <button type="button" ng-click="createPost(post)" ng-disabled="formPost.$invalid">Enviar</button>
+    </form>
+
+    <div ng-repeat="item in posts">
+        <h1>{{item.title}}</h1>
+        <h2>{{item.text}}</h2>
+        <button type="button" ><a href="#!/post/{{item.$id}}">Editar</a></button>
+    </div>
+</div>

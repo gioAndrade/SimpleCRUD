@@ -1,0 +1,11 @@
+<div>
+    <form name="formPost" method="post">
+            <textarea ng-model="post.title" rows="3" cols="15" ng-required> {{post.title}} </textarea>
+        <br>
+        <br>
+        <textarea ng-model="post.text" rows="8" cols="80" ng-required> {{post.text}} </textarea>
+        <br>
+        <br>
+        <button type="button" ng-click="updatePost(post)" ng-disabled="formPost.$invalid">Confirmar</button>
+    </form>
+</div>
