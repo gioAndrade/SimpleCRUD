@@ -1,0 +1,17 @@
+#cont{
+    margin: 30px 10px 10px 10px;
+}
+
+#inp, input{
+    margin-bottom: 10px;
+}
+
+#btn, a, a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+#login{
+    width: 100%;
+    top: 140px;
+}

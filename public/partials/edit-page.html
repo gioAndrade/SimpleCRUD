@@ -1,11 +1,23 @@
-<div>
-    <form name="formPost" method="post">
-            <textarea ng-model="post.title" rows="3" cols="15" ng-required> {{post.title}} </textarea>
-        <br>
-        <br>
-        <textarea ng-model="post.text" rows="8" cols="80" ng-required> {{post.text}} </textarea>
-        <br>
-        <br>
-        <button type="button" ng-click="updatePost(post)" ng-disabled="formPost.$invalid">Confirmar</button>
-    </form>
-</div>
+
+<div class="row" id="cont">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    Adicionar
+                </div>
+                <div class="card-body">
+                    <form name="formPost" method="post">
+                        <div id="inp">
+                            <input type="text" class="form-control" placeholder="{{post.name}}" ng-model="post.name" ng-required>
+                            <input type="text" class="form-control" placeholder="{{post.cpf}}" ng-model="post.cpf" ng-required>
+    
+                            <button type="button" class="btn btn-info" ng-click="updatePost(post)" ng-disabled="formPost.$invalid">Confirmar</button>
+                        </div>
+    
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3"></div>
+    </div>

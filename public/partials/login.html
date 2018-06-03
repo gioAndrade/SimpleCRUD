@@ -1,0 +1,16 @@
+<div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+        <div class="card" id="login">
+            <div class="card-body">
+                <h5 class="card-title">Login</h5>
+                <input type="text" class="form-control" placeholder="email" ng-model="user.email" ng-required>
+                <input type="password" class="form-control" placeholder="senha" ng-model="user.pass" ng-required>
+
+                <button type="button" class="btn btn-info" ng-click="signIn(user)">Entrar</button>
+                <button type="button" class="btn btn-info pull-right" ng-click="addUser(user)">Cadastrar</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4"></div>
+</div>
